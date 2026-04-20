@@ -1,0 +1,168 @@
+<style>
+* {margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;}
+
+html {scroll-behavior: smooth;}
+
+header {position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    z-index: 1000;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);}
+
+.tesla-logo {position: absolute;
+    left: 40px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 0;
+    cursor: pointer;
+    transition: 0.3s;}
+
+.tesla-logo:hover {opacity: 0.7;}
+
+nav ul {display: flex;
+    list-style: none;
+    gap: 80px;}
+
+nav a {text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;}
+
+nav a:hover {opacity: 0.7;}
+
+section {height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px 40px;
+    color: white;}
+
+.hero {background: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Promo-Meet-Model-Y-Desktop.jpg) center/cover no-repeat;}
+
+.model-s {background: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Model-S-Desktop-US-v3.jpg) center/cover no-repeat;}
+
+.model-3 {background: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-3-Standard-Hero-Desktop-EMEA.jpg) center/cover no-repeat;}
+
+.model-x {background: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-X-Hero-Desktop-US.png) center/cover no-repeat;}
+
+.model-y {background: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-Y-Promo-Desktop-US-Snow.jpg) center/cover no-repeat;}
+
+.content {margin-top: 60px;}
+.content h1 {font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 20px;}
+.content h2 {font-size: 42px;
+    font-weight: 500;}
+.content p {font-size: 16px;
+    margin-top: 10px;}
+.buttons {margin-bottom: 30px;}
+.buttons button {padding: 12px 24px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 14px;
+    min-width: 150px;
+    transition: 0.3s;}
+
+.primary {background: black;
+    color: white;}
+.secondary {background: white;
+    color: black;}
+.buttons button:hover {opacity: 0.85;}
+
+
+@media (max-width: 768px) {
+    .tesla-logo {font-size: 18px;}
+    .nav-container {display: none;}
+    .hamburger {display: flex; flex-direction: column; cursor: pointer;}
+    .hamburger span {width: 25px; height: 3px; background: white; margin: 3px 0; transition: 0.3s;}
+    header {padding: 15px 20px;}
+
+    nav ul {display: none;}
+
+    .content h1 {font-size: 36px;}
+    .content h2 {font-size: 32px;}
+
+    .buttons {margin-bottom: 20px;}
+    .buttons button {padding: 10px 20px;
+        font-size: 12px;
+        min-width: 120px;}
+
+    section {padding: 80px 15px 20px;}
+
+    .footer-content nav ul {
+        flex-direction: column;
+        gap: 15px;}
+    }
+
+@media (max-width: 480px) {
+    .tesla-logo {font-size: 16px;}
+    header {padding: 10px 15px;}
+    header {padding: 10px 15px;}
+
+    .content h1 {font-size: 28px;}
+    .content h2 {font-size: 24px;}
+    .content p {font-size: 14px;}
+
+    .buttons button {padding: 8px 16px;
+        font-size: 11px;
+        min-width: 100px;}
+
+    section {padding: 70px 10px 15px;}
+
+    footer {padding: 30px 15px;}
+
+    .footer-content nav ul {gap: 10px;}
+    }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .content h1 {font-size: 44px;}
+    .content h2 {font-size: 38px;}
+
+    nav ul {gap: 50px;}
+    }
+
+footer {
+    background-color: #000;
+    color: white;
+    padding: 40px 20px;
+    position: relative;}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;}
+
+.footer-content nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    margin-bottom: 20px;}
+
+.footer-content nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;}
+
+.footer-content nav a:hover {
+    opacity: 0.7;}
+
+.footer-content p {
+    font-size: 12px;
+    opacity: 0.7;}
+}
+    </style>
